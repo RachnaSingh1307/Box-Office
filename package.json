@@ -2,7 +2,7 @@
   "name": "box-office",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://RachnaSingh1307.github.io/Box-Office-app",
+  "homepage": "https://RachnaSingh1307.github.io/Box-Office",
   "dependencies": {
     "@tanstack/react-query": "^5.40.0",
     "eslint": "^8.57.0",
@@ -28,13 +28,13 @@
     "workbox-streams": "^6.6.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "format": "prettier --write src/**/*.{js,jsx}"
   },
   "eslintConfig": {
     "extends": [
